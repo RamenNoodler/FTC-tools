@@ -1,0 +1,59 @@
+{
+  "name": "Part",
+  "type": "object",
+  "properties": {
+    "team_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "part_number": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "motor",
+        "servo",
+        "sensor",
+        "structural",
+        "electronics",
+        "hardware",
+        "wheels",
+        "other"
+      ]
+    },
+    "quantity": {
+      "type": "number",
+      "default": 0
+    },
+    "quantity_available": {
+      "type": "number",
+      "default": 0
+    },
+    "location": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "supplier": {
+      "type": "string"
+    },
+    "cost": {
+      "type": "number"
+    },
+    "is_shared": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "team_id",
+    "name"
+  ]
+}
