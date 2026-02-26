@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Quill styles to fit theme */
+.ql-container.ql-snow {
+  border: none !important;
+  font-family: inherit;
+}
+
+.ql-toolbar.ql-snow {
+  border: none !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  background-color: #f8fafc;
+}
